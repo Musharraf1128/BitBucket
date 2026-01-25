@@ -3,11 +3,13 @@ spring:
     name: BitBucket
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/filestorage_db
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/filestorage_db
     username: postgres
     password: postgres
+    driver-class-name: org.postgresql.Driver
 
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
