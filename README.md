@@ -2,7 +2,7 @@
 
 A comprehensive file storage system with React frontend and Spring Boot backend, featuring JWT authentication, file/folder management, caching, rate limiting, and complete Docker support.
 
-## 🚀 Features
+## Features
 
 ### Frontend
 - **React + TypeScript** - Modern, type-safe frontend
@@ -24,13 +24,13 @@ A comprehensive file storage system with React frontend and Spring Boot backend,
 - **Docker Support** - Complete containerization with one-command startup
 - **Data Persistence** - PostgreSQL database with volume mounts
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Docker and Docker Compose
 - (Optional) Java 17+ and Maven 3.9+ for backend local development
 - (Optional) Node.js 20+ and npm for frontend local development
 
-## 🏃 Quick Start
+## Quick Start
 
 ### One-Command Docker Startup
 
@@ -220,7 +220,7 @@ curl -X DELETE http://localhost:8080/api/folders/1 \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
-## 🛠️ Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -238,7 +238,7 @@ Key variables:
 
 See [MANUAL_CONFIGURATION.md](MANUAL_CONFIGURATION.md) for detailed configuration instructions.
 
-## 🏗️ Architecture
+## Architecture
 
 ### Technology Stack
 
@@ -268,7 +268,7 @@ backend/
     └── application.yaml # Application configuration
 ```
 
-## 🐳 Docker
+## Docker
 
 ### Build and Run
 
@@ -294,7 +294,7 @@ docker logs bitbucket-backend -f
 docker-compose up --build -d
 ```
 
-## 📊 Database
+## Database
 
 ### Access PostgreSQL (from host)
 
@@ -308,7 +308,7 @@ docker exec -it bitbucket-db psql -U postgres -d filestorage_db
 - `folders` - Folder structure
 - `file_metadata` - File information
 
-## 🧪 Testing
+## Testing
 
 ### Health Check
 
@@ -320,7 +320,7 @@ curl http://localhost:8080/api/health
 
 Navigate to http://localhost:8080/swagger-ui.html to explore and test all API endpoints interactively.
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Port Already in Use
 
@@ -354,7 +354,7 @@ docker-compose down -v  # Removes volumes
 docker-compose up --build
 ```
 
-## 📝 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description | Auth Required |
 |--------|----------|-------------|---------------|
@@ -371,7 +371,7 @@ docker-compose up --build
 | GET | `/api/folders/{id}` | Get folder | Yes |
 | DELETE | `/api/folders/{id}` | Delete folder | Yes |
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -379,15 +379,15 @@ docker-compose up --build
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 👤 Author
+## Author
 
 razor
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Spring Boot team for the excellent framework
 - PostgreSQL and Redis communities
