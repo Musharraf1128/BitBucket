@@ -58,7 +58,7 @@ server:
 
 # JWT Configuration
 jwt:
-  secret: ${YnpridNmRsM/BblbgxB+pUbn5eGik87nypBT73eK8fTlMifJKP53sTLHIbhcCw2TxKofdwCe5rclYqCVPJyHVQ==}
+  secret: ${JWT_SECRET:YnpridNmRsM/BblbgxB+pUbn5eGik87nypBT73eK8fTlMifJKP53sTLHIbhcCw2TxKofdwCe5rclYqCVPJyHVQ==}
   expiration: 3600000 # 1 hour (ms)
 
 # File Storage Configuration

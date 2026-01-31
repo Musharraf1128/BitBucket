@@ -41,12 +41,13 @@ services:
       DB_PASSWORD: postgres
       REDIS_HOST: redis
       CACHE_TYPE: redis
-      JWT_SECRET: ${JWT_SECRET:-YnpridNmRsM/BblbgxB+pUbn5eGik87nypBT73eK8fTlMifJKP53sTLHIbhcCw2TxKofdwCe5rclYqCVPJyHVQ==}
+      # SECURITY: Set these in .env file - DO NOT hardcode credentials here
+      JWT_SECRET: ${JWT_SECRET}
       FILE_UPLOAD_DIR: /app/uploads
       MAIL_HOST: smtp.gmail.com
       MAIL_PORT: 587
-      MAIL_USERNAME: shahmusharaf1128@gmail.com
-      MAIL_PASSWORD: rovy yesh bhpp nhet
+      MAIL_USERNAME: ${MAIL_USERNAME}
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
 
     volumes:
       - file_uploads:/app/uploads

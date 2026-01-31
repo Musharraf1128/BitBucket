@@ -24,8 +24,18 @@ A comprehensive file storage system built with Spring Boot, featuring JWT authen
 
 ### One-Command Docker Startup
 
+**Important**: Create a `.env` file first with your credentials:
+
 ```bash
-cd /home/razor/workspace/github.com/Musharraf1128/BitBucket
+cp .env.template .env
+# Edit .env and add your JWT_SECRET, MAIL_USERNAME, and MAIL_PASSWORD
+```
+
+Then start the application:
+
+```bash
+# Navigate to the project root directory
+cd BitBucket
 docker-compose up --build
 ```
 

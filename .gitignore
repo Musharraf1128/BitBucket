@@ -1,0 +1,23 @@
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Build
+target/
+build/
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
