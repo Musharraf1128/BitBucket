@@ -13,7 +13,12 @@
 # Build
 target/
 build/
+dist/
 *.class
+
+# Dependencies
+node_modules/
+package-lock.json
 
 # OS
 .DS_Store

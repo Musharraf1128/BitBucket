@@ -1,9 +1,18 @@
 # BitBucket - File Storage System
 
-A comprehensive file storage system built with Spring Boot, featuring JWT authentication, file/folder management, caching, rate limiting, and complete Docker support.
+A comprehensive file storage system with React frontend and Spring Boot backend, featuring JWT authentication, file/folder management, caching, rate limiting, and complete Docker support.
 
 ## 🚀 Features
 
+### Frontend
+- **React + TypeScript** - Modern, type-safe frontend
+- **Clean UI** - Google-like minimal design with white background
+- **Responsive** - Works on desktop and mobile devices
+- **File Upload** - Simple drag-and-drop file upload
+- **Folder Navigation** - Intuitive folder structure browsing
+- **Search** - Real-time file search functionality
+
+### Backend
 - **JWT Authentication** - Secure user registration and login with role-based access control
 - **File Management** - Upload, download, delete files with metadata tracking
 - **Folder Structure** - Organize files in nested folders
@@ -18,7 +27,8 @@ A comprehensive file storage system built with Spring Boot, featuring JWT authen
 ## 📋 Prerequisites
 
 - Docker and Docker Compose
-- (Optional) Java 17+ and Maven 3.9+ for local development
+- (Optional) Java 17+ and Maven 3.9+ for backend local development
+- (Optional) Node.js 20+ and npm for frontend local development
 
 ## 🏃 Quick Start
 
@@ -40,15 +50,54 @@ docker-compose up --build
 ```
 
 The application will be available at:
-- **API**: http://localhost:8080
+- **Frontend**: http://localhost:3000 (Main application UI)
+- **Backend API**: http://localhost:8080
 - **Swagger UI**: http://localhost:8080/swagger-ui.html
 - **Health Check**: http://localhost:8080/api/health
 
 ### Services
 
-- **Backend**: Port 8080
+- **Frontend**: Port 3000 (Nginx serving React app)
+- **Backend**: Port 8080 (Spring Boot API)
 - **PostgreSQL**: Internal (not exposed)
 - **Redis**: Port 6379
+
+## 🖥️ Using the Frontend
+
+### Access the Application
+
+Open your browser and navigate to **http://localhost:3000**
+
+### First Time Setup
+
+1. **Create an Account**
+   - Click "Create account" on the login page
+   - Enter your email and password
+   - Click "Create account"
+   - You'll be automatically logged in and redirected to the dashboard
+
+2. **Login**
+   - Enter your email and password
+   - Click "Sign in"
+   - You'll be redirected to the dashboard
+
+### Dashboard Features
+
+**File Management:**
+- **Upload Files**: Click "Upload File" button and select a file
+- **Download Files**: Click "Download" next to any file
+- **Delete Files**: Click "Delete" next to any file (confirmation required)
+- **Search Files**: Use the search bar at the top to find files by name
+
+**Folder Management:**
+- **Create Folder**: Click "New Folder", enter a name, and click "Create"
+- **Navigate Folders**: Click on any folder name to enter it
+- **Delete Folder**: Click "Delete" next to any folder (confirmation required)
+- **Back to Root**: Click "← Back to root" when inside a folder
+
+**User Account:**
+- **View Email**: Your email is displayed in the top right corner
+- **Logout**: Click "Logout" to sign out
 
 ## 🔐 Authentication
 
