@@ -62,7 +62,7 @@ The application will be available at:
 - **PostgreSQL**: Internal (not exposed)
 - **Redis**: Port 6379
 
-## 🖥️ Using the Frontend
+## Using the Frontend
 
 ### Access the Application
 
@@ -99,7 +99,7 @@ Open your browser and navigate to **http://localhost:3000**
 - **View Email**: Your email is displayed in the top right corner
 - **Logout**: Click "Logout" to sign out
 
-## 🔐 Authentication
+## Authentication
 
 ### Register a New User
 
@@ -250,6 +250,7 @@ See [MANUAL_CONFIGURATION.md](MANUAL_CONFIGURATION.md) for detailed configuratio
 - **Rate Limiting**: Bucket4j 8.7.0
 - **Build**: Maven 3.9
 - **Runtime**: Java 17
+- **Frontend**: React-18 with vite
 
 ### Project Structure
 
@@ -384,7 +385,7 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-Musharraf1128
+razor
 
 ## 🙏 Acknowledgments
 
